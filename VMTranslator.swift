@@ -136,7 +136,7 @@ enum SegmentMap {
     case constant
     case staticVar(baseName: String)
     
-    // Fetch address into 'D' register
+    // Fetch address into 'A' register
     func asmSelector(index: UInt) -> String {
         switch self {
         case .indirect(let symbol):
